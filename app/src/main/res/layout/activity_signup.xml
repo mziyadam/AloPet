@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
-
+    tools:context=".Signup">
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="414dp"
@@ -14,10 +13,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/log_in_page" />
+        app:srcCompat="@drawable/sign_up_page" />
 
     <EditText
-        android:id="@+id/mailbox"
+        android:id="@+id/mailboxsignup"
         android:layout_width="222dp"
         android:layout_height="44dp"
         android:ems="10"
@@ -28,13 +27,12 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.36" />
+        app:layout_constraintVertical_bias="0.37" />
 
     <EditText
-        android:id="@+id/pwbox"
+        android:id="@+id/pwboxsignup"
         android:layout_width="222dp"
         android:layout_height="42dp"
-        android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPassword"
         android:textColor="#0B8098"
@@ -43,40 +41,42 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481" />
+        app:layout_constraintVertical_bias="0.499" />
+
+    <EditText
+        android:id="@+id/pwboxsignupconfirm"
+        android:layout_width="222dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#0B8098"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.602" />
 
     <ImageButton
-        android:id="@+id/loginbtn"
-        android:layout_width="167dp"
-        android:layout_height="50dp"
-        android:background="@drawable/loginbutton"
+        android:id="@+id/signupbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signupbtn"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.691" />
 
     <ImageButton
-        android:id="@+id/tosignup"
+        android:id="@+id/tologin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938"
-        android:background="@drawable/tosignup"
-        />
-    <!--
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/signinbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.129"
-            app:layout_constraintStart_toStartOf="@+id/imageView3"
-            app:layout_constraintTop_toTopOf="@+id/imageView3"
-            app:layout_constraintVertical_bias="0.837" />-->
+        app:layout_constraintVertical_bias="0.951"
+        android:background="@drawable/tologin" />
 </androidx.constraintlayout.widget.ConstraintLayout>

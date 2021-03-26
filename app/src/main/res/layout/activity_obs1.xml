@@ -4,26 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Homepage">
+    tools:context=".obs1">
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="432dp"
-        android:layout_height="740dp"
+        android:id="@+id/imageView2"
+        android:layout_width="415dp"
+        android:layout_height="736dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/homepage" />
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@drawable/obs1" />
 
-    <Button
-        android:id="@+id/logoutbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Logout"
+    <ImageButton
+        android:id="@+id/next1"
+        android:layout_width="81dp"
+        android:layout_height="46dp"
+        android:background="@drawable/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.870"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.765" />
+        app:layout_constraintVertical_bias="0.925" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

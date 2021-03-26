@@ -1,4 +1,4 @@
-package com.example.projekpertama;
+package com.example.alopet;
 
 import org.junit.Test;
 

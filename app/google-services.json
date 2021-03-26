@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "581428679336",
+    "project_id": "alopet-raion",
+    "storage_bucket": "alopet-raion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581428679336:android:f6d3c1610b7270d321689d",
+        "android_client_info": {
+          "package_name": "com.example.alopet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581428679336-b2pr6kh5r2br473sd0j4uh37gd991cte.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alopet",
+            "certificate_hash": "d48c39cd7be0c9563b3de0efcbaaee27ab7a809d"
+          }
+        },
+        {
+          "client_id": "581428679336-jd947ll74rg1m8ll9r14g1dpgon4trkn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClhGIBlbg3AIDMT4Fjo53O7ayixH-V_-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581428679336-j9teoastccvqvirf6a8dj12egnfrak3j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

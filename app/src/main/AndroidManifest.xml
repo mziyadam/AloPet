@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.projekpertama">
+    package="com.example.alopet">
 
     <application
         android:allowBackup="true"
@@ -8,8 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ProjekPertama">
-        <activity android:name=".Homepage"></activity>
+        android:theme="@style/Theme.alopet">
+        <activity android:name=".obs3"></activity>
+        <activity android:name=".obs2" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Homepage" />
         <activity android:name=".Login" />
         <activity android:name=".Splash">
             <intent-filter>
@@ -18,7 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".obs1" />
 
         <meta-data
             android:name="preloaded_fonts"

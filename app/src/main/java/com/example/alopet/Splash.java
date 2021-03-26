@@ -1,4 +1,4 @@
-package com.example.projekpertama;
+package com.example.alopet;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,7 +16,8 @@ public class Splash extends AppCompatActivity {
 
             @Override
             public void run() {
-                Intent intent = new Intent(Splash.this, MainActivity.class);
+
+                Intent intent = new Intent(Splash.this, obs1.class);
                 startActivity(intent);
                 finish();
             }

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".obs3">
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="415dp"
@@ -15,30 +14,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.6"
-        app:srcCompat="@drawable/onboarding_screen" />
+        app:srcCompat="@drawable/obs3" />
 
     <ImageButton
-        android:id="@+id/signup"
-        android:layout_width="145dp"
-        android:layout_height="45dp"
-        android:background="@drawable/signup"
+        android:id="@+id/next3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.870"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.925" />
-
-    <ImageButton
-        android:id="@+id/login1"
-        android:layout_width="145dp"
-        android:layout_height="45dp"
-        android:background="@drawable/login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.130"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.925" />
-
+        app:layout_constraintVertical_bias="0.924"
+        android:background="@drawable/getstarted"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

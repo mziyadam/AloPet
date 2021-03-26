@@ -1,4 +1,4 @@
-package com.example.projekpertama;
+package com.example.alopet;
 
 public class acc {
     private String mail;
