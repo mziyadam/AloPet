@@ -7,8 +7,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.PasswordTransformationMethod;
+import android.text.method.SingleLineTransformationMethod;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ToggleButton;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -22,7 +26,7 @@ public class Login extends AppCompatActivity {
     private ImageButton login;
     private ImageButton tosignup;
     private FirebaseAuth mAuth;
-
+private ToggleButton toggle;
 
     /*
     public static ArrayList<acc> ac=new ArrayList<acc>(){{add(new acc("admin@admin.com","password"));}};
@@ -61,6 +65,20 @@ public class Login extends AppCompatActivity {
 
         login=findViewById(R.id.loginbtn);
         tosignup=findViewById(R.id.tosignup);
+        toggle=findViewById(R.id.togglebtn);
+        toggle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (etpw.getTransformationMethod().getClass().getSimpleName() .equals("PasswordTransformationMethod")) {
+                    etpw.setTransformationMethod(new SingleLineTransformationMethod());
+                }
+                else {
+                    etpw.setTransformationMethod(new PasswordTransformationMethod());
+                }
+
+                etpw.setSelection(etpw.getText().length());
+            }
+        });
         tosignup.setOnClickListener(v -> {
             tosu();
         });

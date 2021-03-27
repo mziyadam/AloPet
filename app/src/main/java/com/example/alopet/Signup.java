@@ -7,8 +7,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.PasswordTransformationMethod;
+import android.text.method.SingleLineTransformationMethod;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ToggleButton;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -24,6 +28,8 @@ public class Signup extends AppCompatActivity {
     private ImageButton signup;
     private ImageButton tologin;
     private FirebaseAuth mAuth;
+    private ToggleButton toggle2;
+    private ToggleButton toggle1;
 
     @Override
     public void onStart() {
@@ -44,6 +50,34 @@ public class Signup extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         signup=findViewById(R.id.signupbtn);
 tologin=findViewById(R.id.tologin);
+toggle1=findViewById(R.id.togglebtn1);
+toggle2=findViewById(R.id.togglebtn2);
+toggle1.setOnClickListener(new View.OnClickListener(){
+    @Override
+    public void onClick(View v) {
+        if (etpw.getTransformationMethod().getClass().getSimpleName() .equals("PasswordTransformationMethod")) {
+            etpw.setTransformationMethod(new SingleLineTransformationMethod());
+        }
+        else {
+            etpw.setTransformationMethod(new PasswordTransformationMethod());
+        }
+
+        etpw.setSelection(etpw.getText().length());
+    }
+});
+        toggle2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if (etpwc.getTransformationMethod().getClass().getSimpleName() .equals("PasswordTransformationMethod")) {
+                    etpwc.setTransformationMethod(new SingleLineTransformationMethod());
+                }
+                else {
+                    etpwc.setTransformationMethod(new PasswordTransformationMethod());
+                }
+
+                etpwc.setSelection(etpwc.getText().length());
+            }
+        });
         tologin.setOnClickListener(v->{
             startActivity(new Intent(Signup.this,Login.class));
             finish();
