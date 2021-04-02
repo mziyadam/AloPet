@@ -88,20 +88,21 @@ toggle1.setOnClickListener(new View.OnClickListener(){
             String mail = etmail.getText().toString();
             if(!pw.equals(pwc)){
                 pwsame();
-            }
+            }else{
             mAuth.createUserWithEmailAndPassword(mail,pw)
                     .addOnCompleteListener(Signup.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
+                            boolean pwunsame=true;
 
 
-                            if (!task.isSuccessful()) {
+                            if (!task.isSuccessful()&&pwunsame) {
                                 emsame();
-                            } else {
+                            }else {
                                 registered();
                             }
                         }
-                    });
+                    });}
 
         });
     }

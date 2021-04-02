@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:id="@+id/cardView"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="4dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/artikelbg"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="215dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="match_parent"
+                android:id="@+id/image"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="150dp"
+                android:text="TITLE"
+                android:textSize="15dp"
+                android:fontFamily="@font/g_bold"
+                android:textColor="@color/black"
+                android:id="@+id/tvTitle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom">
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Source"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/g_light"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvSource"/>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textSize="9dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:ems="15"
+                    android:fontFamily="@font/g_light"
+                    android:textColor="@color/black"
+                    android:id="@+id/tvDate"
+                    />
+
+
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
