@@ -142,6 +142,7 @@ private ToggleButton toggle;
     }
     private void pass(){
         Intent intent = new Intent(Login.this, Homepage.class);
+
         startActivity(intent);
         finish();
     }
